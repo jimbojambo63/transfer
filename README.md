@@ -1,16 +1,14 @@
-# transferMultiplo.sh
+Questa versione dello script permette upload di file multipli tramite richiesta PUT http
+a tutte le destinazioni specificate o al server http://transfer.sh
 
-#Questa versione dello script permette upload di file multipli tramite richiesta PUT http
-#a tutte le destinazioni specificate o al server http://transfer.sh
+Curl offre upload con quasi tutti i protocolli esistenti. questo script evita di scrivere i suoi argomenti.
 
-#Curl offre upload con quasi tutti i protocolli esistenti. questo script evita di scrivere i suoi argomenti.
+Da implementare la gestione di upload diversi per destinazioni diverse.
+scrivere argWget() linea 82 per la versione con wget
 
-#Da implementare la gestione di upload diversi per destinazioni diverse.
-#scrivere argWget() linea 82 per la versione con wget
-
-#formato parametri: <source> [{dest}]
-#FTP: gestire le destinazioni ftp trattate ora come http
-#SCP: richiedere user e password/passphrase/publicKey
+formato parametri: <source> [{dest}]
+FTP: gestire le destinazioni ftp trattate ora come http
+SCP: richiedere user e password/passphrase/publicKey
 
 
 UTILIZZO: 
