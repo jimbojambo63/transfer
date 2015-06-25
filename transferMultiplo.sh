@@ -131,10 +131,11 @@ if [ "$#" -gt 0 ]
 		
 		argomentiCurl=$(argCurl)
 
-		#--progress-bar sostituito con '-#', aggiunto --conection-timeout 5 per rinunciare
+		#--progress-bar sostituito con '-#', aggiunto --conect-timeout 5 per rinunciare
 		#a stabilire una connessione con un server che non risponde dopo 5 secondi
+		#invece --connect-timeout non funziona, pare che non si limiti a contare il tempo di connessione
 
-		curl -# --connect-timeout 5 $(echo "$argomentiCurl") > $link
+		curl -# $(echo "$argomentiCurl") > $link
     else
 		
 		#argomentiWget=$(argWget)
